@@ -20,3 +20,4 @@ shape2 <- shape%>%
         mycsv,
         by.x="GSS_CODE", 
         by.y="Row Labels")
+```
