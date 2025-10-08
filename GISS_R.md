@@ -1,0 +1,85 @@
+# **GISS/R**
+---
+## 显示没有"st_read"或者某个函数
+- install and load package first
+```sh
+install.packages(c("sf", "tmap", "tmaptools", "RSQLite", "tidyverse"), 
+                 repos = "https://www.stats.bris.ac.uk/R/")
+```
+- 或者运行 sf::sf_extSoftVersion()
+- 然后重试
+
+
+## .shp
+#### Load 
+```sh
+library(sf)
+shape <- st_read("C:/Users/he/Documents/CASA/GISS/Week1/homework/statsnz-territorial-authority-2018-generalised-SHP/territorial-authority-2018-generalised.shp")
+```
+####  Summary(shape)
+```sh
+Summary(shape)
+```
+#### Merge
+```sh
+shape2 <- shape%>%
+  merge(.,
+        mycsv,
+        by.x="GSS_CODE", 
+        by.y="Row Labels")
+```
+
+#### Draw all the attribute
+```sh
+plot(shape)
+```
+####  Draw outline
+```sh
+library(sf)
+shape %>% 
+  st_geometry() %>%
+  plot()
+  ```
+
+#### Read CSV
+```sh
+library(tidyverse)
+mycsv <-  read_csv("C:/Users/he/Documents/CASA/GISS/W1/HM/Statistical Area 1 dataset for Census 2018-total-New Zealand_updated_4-11-21/2018paidemployee.csv")  
+```
+
+#### View CSV
+```sh
+mycsv 
+```
+
+
+# Read shapefile
+library(sf)
+shape<-st_read("C:/Users/he/Documents/CASA/GISS/W2/HW/Washington_Counties_with_Natural_Shoreline___washsh_area/Washington_Counties_with_Natural_Shoreline___washsh_area.shp")
+
+# ATTENTION: NO CAPITAL!!!! 
+summary(shape)
+
+plot(shape)
+
+# Function enquiry
+??summary.function
+
+# Outline
+library(sf)
+shape %>% 
+  st_geometry() %>%
+  plot()
+
+# Read CSV
+library(tidyverse)
+#this needs to be your file path again
+mycsv <-  read_csv("C:/Users/he/Documents/CASA/GISS/W2/HW/Report_Card_Assessment_Data_2018-19_School_Year_20251007.csv")
+
+[John gurber]
+
+
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+
+ [john gruber]: <http://daringfireball.net>
