@@ -1,5 +1,11 @@
 # **GISS/R**
 ---
+---
+### Before delve into practice
+- Check all ==package ticked==?
+- ==No capital== on the function code!
+- File path ==delimier==: / (adjust copies from path)
+
 ## 显示没有"st_read"或者某个函数
 - install and load package first
 ```sh
