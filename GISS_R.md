@@ -1,10 +1,15 @@
 # **GISS/R**
 ---
 ---
-### Before delve into practice
-- Check all ==package ticked==?
+### `Before delve into practice`
+- Check all ==package ticked==?  [//]: # (error load fuction)
 - ==No capital== on the function code!
 - File path ==delimier==: / (adjust copies from path)
+
+[link](https://www.example.com/my%20great%20page)
+[link](https://www.example.com/my great page)
+
+![The San Juan Mountains are beautiful!](https://wallpaperaccess.com/baby-cats "San Juan Mountains")
 
 ## 显示没有"st_read"或者某个函数
 - install and load package first
