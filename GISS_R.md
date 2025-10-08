@@ -80,6 +80,8 @@ mycsv <-  read_csv("C:/Users/he/Documents/CASA/GISS/W2/HW/Report_Card_Assessment
 
 
 
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+[//]: # (Links saved here. 
+Note: When exported as PDF file, !!!Chinese letters do not show!!!
+)
 
- [john gruber]: <http://daringfireball.net>
+ [John gurber]: <http://daringfireball.net>
