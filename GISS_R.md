@@ -25,39 +25,37 @@
     ```sh
    ??summary.function
     ```
-### PRACTICE 01 
+###  ❤️PRACTICE 01 (join shapefile, CSV to create thematic map)
  - Input data
- - plot
- - pivot
- - join
- - check
- - quick thematic mapping
+ - Data process (pivot)
+ - Join (merge)
+ - Quick thematic mapping
  
 #### Read shapefile
-```sh
+```
 shape <-st_read("file path")
 ```
 #### Check info
-```sh
+```
 summary(shape)
 plot(shape)
 ```
 #### Plot outline
-```sh
+```
 shape %>% 
   st_geometry() %>%
   plot()
  ```
 #### Read CSV
-```sh
+```
 mycsv <-read.csv("file path")
 ```
 #### View CSV
-```sh
+```
 mycsv 
 ```
 #### [Pivot] [P]
-```sh
+```
 mycsv2 <- mycsv%>%
   pivot_wider( id_cols = code, names_from = year, values_from = total_action_taken)
 ```
@@ -66,7 +64,7 @@ mycsv2 <- mycsv%>%
 `values_from` The column whose values will be used as cell values
 
 #### Join data
-```sh
+```
 shape2 <- shape%>%
   merge(.,
         mycsv2,
@@ -75,12 +73,12 @@ shape2 <- shape%>%
 ```
 practice use only, it is not recommended to use at data management due to data collapse
 #### Check the new file
-```sh
+```
 shape2%>%
   head(., n=10)
 ```
 #### Mapping
-```sh
+```
 tmap_mode("plot")
 shape2 %>%
   qtm(.,fill = "2011-12")
@@ -107,7 +105,7 @@ shape2 %>%
 
 
 [//]: # (Links saved here. 
-Note: When exported as PDF file, !!!Chinese letters do not show!!!
+Note: When exported as PDF file, !!!Chinese letters do not show!!!❤️
 )
 
  [John gurber]: <http://daringfireball.net>
