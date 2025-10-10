@@ -6,13 +6,13 @@
 
 ### R Studio Education
 
-#### [Beginner] [1]
+#### [Beginner][1]
 ##### 1. Install , RStudio, and R packages like the tidyverse. 
 - [ ] [Basic lesson][9]
 
 
 #####  2. Introduction
-- [x] [A Gentle Introduction to Tidy Statistics in R] [2]
+- [x] [A Gentle Introduction to Tidy Statistics in R][2]
 
 
 2.1 What R can-do:
@@ -31,9 +31,9 @@ add_pi <- function(x){
 - [r4ds][3]
 - [R for Data Science (2e)][4]
 - [The MockUp][5]
-- [Learning ststistics with R] [6]
+- [Learning ststistics with R][6]
 - [Data Visualization][7]
-- [Recipes] [8]
+- [Recipes][8]
  
 2.3 Recommended library:
 ```
