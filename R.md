@@ -42,8 +42,14 @@ library(broom) # nice statistical outputs
 library(knitr) # some tables and R markdown
 library(readxl) # read in Excel files
 library(here) # nice file paths
-
 ```
+
+#####  3. R markdown
+- [ ] [ Get Started With R Markdown][10]
+- [ ] rmarkdown.rstudio.com
+- [ ] [R Markdown: The Definitive Guide][11]
+
+
 
 
 
@@ -75,3 +81,5 @@ library(here) # nice file paths
 [7]:<https://socviz.co/>
 [8]:<https://posit.cloud/learn/recipes>
 [9]:<https://rladiessydney.org/courses/01-basicbasics-0>
+[10]:<https://posit.co/resources/videos/getting-started-with-r-markdown/>
+[11]:<https://bookdown.org/yihui/rmarkdown/>
